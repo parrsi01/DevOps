@@ -108,7 +108,33 @@ Primary files:
 - `../projects/terraform-local-infra-lab/*.tf`
 - `../projects/terraform-local-infra-lab/scripts/`
 
-### 6. Enterprise Incident Simulation Lab
+### 6. Kubernetes Local Platform Lab
+
+Status: `Runnable (after kubectl/minikube/k3s install) + Simulations`
+
+Coverage:
+
+- cluster installation (Minikube primary, K3s alternative)
+- kubectl configuration
+- namespace isolation
+- pod lifecycle
+- deployments and ReplicaSets
+- services (ClusterIP, NodePort)
+- ingress controller
+- ConfigMaps and Secrets
+- resource requests & limits
+- HPA autoscaling
+- rolling updates
+- simulations (CrashLoopBackOff, ImagePullBackOff, OOMKilled, service/ingress/probe failures)
+- troubleshooting cheatsheet
+
+Primary files:
+
+- `../projects/kubernetes-local-lab/README.md`
+- `../projects/kubernetes-local-lab/manifests/`
+- `../projects/kubernetes-local-lab/scripts/`
+
+### 7. Enterprise Incident Simulation Lab
 
 Status: `Documented`
 

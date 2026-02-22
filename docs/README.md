@@ -14,6 +14,7 @@ Short, readable notes for study and repeat practice.
 - `docker-production-lab.md` - Docker production lab notes + live project link
 - `monitoring-stack-lab.md` - Prometheus/Grafana/Loki monitoring lab notes
 - `terraform-local-infra-lab.md` - Terraform local infrastructure lab notes
+- `kubernetes-local-lab.md` - Kubernetes local platform lab notes
 - `enterprise-devops-incidents-lab.md` - 15 cross-layer enterprise incident simulations
 - `github-actions-cicd-lab.md` - GitHub Actions CI/CD lab notes
 
@@ -28,6 +29,7 @@ Short, readable notes for study and repeat practice.
 2. `docker-production-lab.md`
 3. `monitoring-stack-lab.md`
 4. `terraform-local-infra-lab.md`
-5. `enterprise-devops-incidents-lab.md`
-6. `github-actions-cicd-lab.md`
-7. `ticket-demo-index.md`
+5. `kubernetes-local-lab.md`
+6. `enterprise-devops-incidents-lab.md`
+7. `github-actions-cicd-lab.md`
+8. `ticket-demo-index.md`

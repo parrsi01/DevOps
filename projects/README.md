@@ -19,6 +19,11 @@ Runnable labs and templates.
   - Variables, outputs, state, remote state demo
   - Plan/apply/destroy and idempotency practice
   - Drift/manual-change/backend-failure simulations
+- `kubernetes-local-lab/`
+  - Minikube/K3s local platform lab
+  - Namespaces, deployments, services, ingress, config/secrets
+  - HPA autoscaling, rolling updates
+  - Kubernetes failure simulations + troubleshooting
 
 ## CI/CD Templates
 
@@ -32,4 +37,5 @@ Runnable labs and templates.
 1. Run the Docker lab locally.
 2. Practice tickets in `../tickets/docker/`.
 3. Run the Terraform lab and practice state/drift debugging.
-4. Review CI/CD workflows and simulate failures in `../tickets/cicd/`.
+4. Run the Kubernetes local lab and practice cluster debugging.
+5. Review CI/CD workflows and simulate failures in `../tickets/cicd/`.

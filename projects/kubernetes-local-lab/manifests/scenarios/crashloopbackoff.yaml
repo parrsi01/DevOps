@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crashloop-demo
+  namespace: platform-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crashloop-demo
+  template:
+    metadata:
+      labels:
+        app: crashloop-demo
+    spec:
+      containers:
+        - name: crashloop-demo
+          image: busybox:1.36
+          command: ["sh", "-c", "echo starting && sleep 2 && echo fatal startup error >&2 && exit 1"]

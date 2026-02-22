@@ -20,6 +20,7 @@ Date: 2026-02-22
 - `docs/REPOSITORY_STATUS_REPORT.md` - current repo capability/status summary
 - `docs/enterprise-devops-incidents-lab.md` - 15 enterprise incident drills
 - `docs/terraform-local-infra-lab.md` - Terraform state/drift/idempotency lab
+- `docs/kubernetes-local-lab.md` - Kubernetes local platform lab + troubleshooting
 - `projects/README.md` - live labs you run locally
 - `tickets/README.md` - repeatable incident drills
 - `scripts/` - setup / git / VS Code helper scripts
@@ -44,6 +45,8 @@ It is structured for repeat practice: each module includes runnable examples, in
   - Prometheus, Grafana, Loki, app/container/system metrics, dashboards, metric interpretation, SLI/SLO basics
 - Terraform Local Infrastructure Lab
   - Variables, outputs, state, remote state, idempotency, plan/apply/destroy, drift/debugging simulations
+- Kubernetes Local Platform Lab
+  - Minikube/K3s setup, namespaces, services, ingress, HPA, rolling updates, k8s failure simulations
 - Enterprise Incident Simulation Lab
   - 15 realistic cross-layer DevOps incidents with logs, metrics, root cause, resolution, and preventive actions
 - Ticket Demo Library
@@ -106,6 +109,14 @@ cd projects/terraform-local-infra-lab
 cp terraform.tfvars.example terraform.tfvars
 ./scripts/init.sh
 ./scripts/plan.sh
+```
+
+Kubernetes lab:
+
+```bash
+cd projects/kubernetes-local-lab
+./scripts/start_minikube.sh
+./scripts/apply_base.sh
 ```
 
 ## Documentation Standards (Repository Quality)

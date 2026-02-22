@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: imagepull-demo
+  namespace: platform-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: imagepull-demo
+  template:
+    metadata:
+      labels:
+        app: imagepull-demo
+    spec:
+      containers:
+        - name: imagepull-demo
+          image: ghcr.io/stefanprodan/podinfo:not-a-real-tag
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9898

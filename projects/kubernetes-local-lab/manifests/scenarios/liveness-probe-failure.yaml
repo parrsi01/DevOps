@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: liveness-fail-demo
+  namespace: platform-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: liveness-fail-demo
+  template:
+    metadata:
+      labels:
+        app: liveness-fail-demo
+    spec:
+      containers:
+        - name: podinfo
+          image: ghcr.io/stefanprodan/podinfo:6.7.1
+          ports:
+            - containerPort: 9898
+              name: http
+          livenessProbe:
+            httpGet:
+              path: /does-not-exist
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 1
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: http
+            initialDelaySeconds: 3
+            periodSeconds: 5
