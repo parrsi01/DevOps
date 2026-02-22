@@ -2,6 +2,12 @@
 
 Short, readable notes for study and repeat practice.
 
+## Core Index / Manuals
+
+- `OFFLINE_INDEX.md` - offline-first navigation index for the repo
+- `PROJECT_MANUAL.md` - operating manual and practice workflow
+- `REPOSITORY_STATUS_REPORT.md` - module coverage and repository status summary
+
 ## Lab Notes
 
 - `linux-mastery-lab.md` - Linux command and troubleshooting lab notes
