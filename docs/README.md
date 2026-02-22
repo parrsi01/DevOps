@@ -16,6 +16,7 @@ Short, readable notes for study and repeat practice.
 - `terraform-local-infra-lab.md` - Terraform local infrastructure lab notes
 - `kubernetes-local-lab.md` - Kubernetes local platform lab notes
 - `gitops-workflow-lab.md` - GitOps workflow (ArgoCD) lab notes
+- `devsecops-cicd-lab.md` - DevSecOps controls integrated into CI/CD
 - `enterprise-devops-incidents-lab.md` - 15 cross-layer enterprise incident simulations
 - `github-actions-cicd-lab.md` - GitHub Actions CI/CD lab notes
 
@@ -32,6 +33,7 @@ Short, readable notes for study and repeat practice.
 4. `terraform-local-infra-lab.md`
 5. `kubernetes-local-lab.md`
 6. `gitops-workflow-lab.md`
-7. `enterprise-devops-incidents-lab.md`
-8. `github-actions-cicd-lab.md`
-9. `ticket-demo-index.md`
+7. `devsecops-cicd-lab.md`
+8. `enterprise-devops-incidents-lab.md`
+9. `github-actions-cicd-lab.md`
+10. `ticket-demo-index.md`

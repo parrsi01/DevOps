@@ -155,7 +155,30 @@ Primary files:
 - `../projects/gitops-workflow-lab/argocd/`
 - `../projects/gitops-workflow-lab/scripts/`
 
-### 8. Enterprise Incident Simulation Lab
+### 8. DevSecOps CI/CD Integration Lab
+
+Status: `Template + Integrated Security Controls`
+
+Coverage:
+
+- Trivy image and config scanning
+- dependency vulnerability scanning (`npm audit`, dependency review, Trivy FS)
+- secrets scanning (`gitleaks`)
+- basic SAST integration (CodeQL workflow)
+- Docker hardening example (minimal base, non-root runtime)
+- security headers verification in CI
+- simulations (vulnerable dependency, hardcoded secret, critical base-image CVE, insecure Dockerfile)
+- CVSS / risk prioritization / patch strategy guidance
+
+Primary files:
+
+- `../projects/github-actions-ci-demo/.github/workflows/ci.yml`
+- `../projects/github-actions-ci-demo/.github/workflows/docker-publish.yml`
+- `../projects/github-actions-ci-demo/.github/workflows/sast-codeql.yml`
+- `../projects/github-actions-ci-demo/examples/secure-nginx/`
+- `devsecops-cicd-lab.md`
+
+### 9. Enterprise Incident Simulation Lab
 
 Status: `Documented`
 

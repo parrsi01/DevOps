@@ -1,0 +1,11 @@
+# Author: Simon Parris
+# Date: 2026-02-22
+# Intentionally insecure Dockerfile for simulation drills.
+FROM ubuntu:18.04
+
+ADD https://example.com/bootstrap.sh /tmp/bootstrap.sh
+RUN apt-get update && apt-get upgrade -y && apt-get install -y nginx curl && rm -rf /var/lib/apt/lists/*
+COPY . /app
+WORKDIR /app
+EXPOSE 80
+CMD ["bash", "-c", "nginx -g 'daemon off;'"]

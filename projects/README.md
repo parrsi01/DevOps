@@ -36,6 +36,8 @@ Runnable labs and templates.
   - Lint / test / build / docker verify
   - Semantic release tagging
   - Docker publish workflow (GHCR)
+  - DevSecOps integrations (Trivy, gitleaks, dependency scan, CodeQL)
+  - Hardened Docker example + security headers checks
 
 ## Suggested Use
 
@@ -44,4 +46,4 @@ Runnable labs and templates.
 3. Run the Terraform lab and practice state/drift debugging.
 4. Run the Kubernetes local lab and practice cluster debugging.
 5. Run the GitOps workflow lab and practice rollback/drift handling.
-6. Review CI/CD workflows and simulate failures in `../tickets/cicd/`.
+6. Review CI/CD + DevSecOps workflows and simulate failures in `../tickets/cicd/`.

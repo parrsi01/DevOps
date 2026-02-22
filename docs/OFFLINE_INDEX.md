@@ -18,6 +18,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 - `terraform-local-infra-lab.md`
 - `kubernetes-local-lab.md`
 - `gitops-workflow-lab.md`
+- `devsecops-cicd-lab.md`
 - `enterprise-devops-incidents-lab.md`
 
 ## Practice & Operations Notes
