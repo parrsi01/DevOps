@@ -2,34 +2,67 @@
 
 Repeatable hands-on DevOps labs for Linux, Docker, and GitHub Actions CI/CD.
 
-## What this repo includes
+## Start Here
 
-- `docs/` structured lab notes and runbooks
-- `projects/docker-production-lab/` live Docker exercises and failure simulations
-- `projects/github-actions-ci-demo/` production-grade CI/CD workflow templates
-- `tickets/` repeatable incident/ticket demos you can practice anytime
-- `.vscode/` VS Code extensions, tasks, and settings
-- `.devcontainer/` Dev Container config for a portable IDE setup
-- `scripts/` bootstrap helpers for VS Code extensions and Git/GitHub setup
+1. Open this repo in VS Code.
+2. Run `Lab: Setup Workspace` from VS Code tasks.
+3. Open `tickets/README.md` and pick one ticket demo.
+4. Practice the incident, fix it, and commit your notes.
 
-## Recommended workflow (repeatable)
+## Quick Links (Mobile-Friendly)
 
-1. Open this folder in VS Code.
-2. Install recommended extensions (`Ctrl+Shift+P` -> `Extensions: Show Recommended Extensions`).
-3. Reopen in Dev Container (`Ctrl+Shift+P` -> `Dev Containers: Reopen in Container`) if desired.
-4. Run ticket demos from `tickets/` and project scripts.
-5. Commit your notes and fixes after each practice run.
+- `docs/README.md` - notes + study runbooks index
+- `projects/README.md` - live labs you run locally
+- `tickets/README.md` - repeatable incident drills
+- `scripts/` - setup / git / VS Code helper scripts
+- `.vscode/tasks.json` - one-click tasks in VS Code
+- `.devcontainer/devcontainer.json` - portable dev environment
 
-## Quick start
+## Repo Layout
+
+- `docs/`
+  - Linux, Docker, and CI/CD notes
+  - Git/GitHub setup notes
+- `projects/`
+  - `docker-production-lab/` live container lab + failure scripts
+  - `github-actions-ci-demo/` CI/CD workflow templates
+- `tickets/`
+  - Docker incident simulations
+  - CI/CD pipeline failure simulations
+
+## Quick Start
 
 ```bash
 ./scripts/setup_workspace.sh
 ./scripts/install_vscode_extensions.sh
 ```
 
-## GitHub push status checklist
+## Live Lab Commands
 
-If your changes are not pushing, check:
+Docker lab:
+
+```bash
+cd projects/docker-production-lab
+docker compose up -d --build
+curl http://127.0.0.1:8080/health
+```
+
+Reset Docker lab:
+
+```bash
+docker compose down -v --remove-orphans
+```
+
+## Daily Commit / Push Loop
+
+```bash
+git status
+git add .
+git commit -m "docs: update lab notes"
+git push
+```
+
+## GitHub Push Checklist (If Push Fails)
 
 ```bash
 git status
@@ -39,7 +72,7 @@ git config --get user.email
 gh auth status
 ```
 
-Then use:
+Repo bootstrap helpers (for new folders):
 
 ```bash
 ./scripts/bootstrap_git_repo.sh
