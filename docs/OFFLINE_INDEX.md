@@ -15,6 +15,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 - `docker-production-lab.md`
 - `github-actions-cicd-lab.md`
 - `monitoring-stack-lab.md`
+- `enterprise-devops-incidents-lab.md`
 
 ## Practice & Operations Notes
 
