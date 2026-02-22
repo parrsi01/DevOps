@@ -238,6 +238,21 @@ Primary files:
 - `../projects/blue-green-deployment-lab/scripts/`
 - `blue-green-deployment-lab.md`
 
+### 12. Aviation-Scale Enterprise Incident Simulation Lab
+
+Status: `Documented`
+
+Coverage:
+
+- 20 aviation-scale enterprise DevOps incidents
+- required reasoning across application, container, orchestration, network, and infrastructure
+- logs + metrics + multi-layer failure interactions + root cause + prevention measures
+- scenarios including Kubernetes node failure, TLS expiry, Redis saturation, DNS misconfiguration, Terraform state corruption, registry outage, monitoring blind spots, CI wrong artifact deploy, cross-region latency spike, and DB deadlock
+
+Primary files:
+
+- `aviation-scale-devops-incidents-lab.md`
+
 ## Documentation Quality Comparison (vs `datascience` repo)
 
 Current status: `Comparable structure, lighter depth`

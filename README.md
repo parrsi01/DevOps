@@ -25,6 +25,7 @@ Date: 2026-02-22
 - `docs/devsecops-cicd-lab.md` - DevSecOps CI/CD integration (Trivy, SAST, secrets, hardening)
 - `docs/sre-simulation-lab.md` - SRE lab (SLIs, SLOs, error budgets, incidents, postmortems)
 - `docs/blue-green-deployment-lab.md` - blue/green + canary deployment simulation (Docker + Nginx)
+- `docs/aviation-scale-devops-incidents-lab.md` - 20 aviation-scale enterprise DevOps incident simulations
 - `projects/README.md` - live labs you run locally
 - `tickets/README.md` - repeatable incident drills
 - `scripts/` - setup / git / VS Code helper scripts
@@ -59,6 +60,8 @@ It is structured for repeat practice: each module includes runnable examples, in
   - SLIs/SLOs/error budgets, latency monitoring, scaling policy, incident response, postmortem practice
 - Blue/Green Deployment Simulation Lab
   - Docker + Nginx traffic switching, canary percentage routing, health-based cutover, rollback, deployment failure simulations
+- Aviation-Scale Enterprise Incident Simulation Lab
+  - 20 cross-layer incidents across app, container, orchestration, network, and infrastructure for aviation-scale systems
 - Enterprise Incident Simulation Lab
   - 15 realistic cross-layer DevOps incidents with logs, metrics, root cause, resolution, and preventive actions
 - Ticket Demo Library
