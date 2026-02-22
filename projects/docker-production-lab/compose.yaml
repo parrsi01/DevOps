@@ -1,0 +1,25 @@
+services:
+  app:
+    build:
+      context: .
+    image: docker-prod-lab:prod
+    container_name: prod-app
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    volumes:
+      - prod_app_data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health', timeout=2).read()"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    logging:
+      driver: local
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  prod_app_data:

@@ -1,0 +1,18 @@
+{
+  "name": "github-actions-ci-demo",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "echo 'Replace with eslint'",
+    "test:ci": "echo 'Replace with test runner'",
+    "build": "mkdir -p dist && echo build > dist/build.txt"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.6",
+    "@semantic-release/release-notes-generator": "^14.1.0",
+    "semantic-release": "^24.2.3"
+  }
+}

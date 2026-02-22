@@ -1,0 +1,50 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Lab: Setup Workspace",
+      "type": "shell",
+      "command": "./scripts/setup_workspace.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "VS Code: Install Recommended Extensions",
+      "type": "shell",
+      "command": "./scripts/install_vscode_extensions.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker Lab: Build",
+      "type": "shell",
+      "command": "docker build -t docker-prod-lab:prod .",
+      "options": {
+        "cwd": "${workspaceFolder}/projects/docker-production-lab"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker Lab: Start App",
+      "type": "shell",
+      "command": "docker compose up -d --build",
+      "options": {
+        "cwd": "${workspaceFolder}/projects/docker-production-lab"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker Lab: Stop App",
+      "type": "shell",
+      "command": "docker compose down",
+      "options": {
+        "cwd": "${workspaceFolder}/projects/docker-production-lab"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Git: Bootstrap Local Repo",
+      "type": "shell",
+      "command": "./scripts/bootstrap_git_repo.sh",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "git.autofetch": true,
+  "yaml.validate": true,
+  "github-actions.workflows.pinned.workflows": [],
+  "docker.languageserver.formatter.ignoreMultilineInstructions": false
+}
