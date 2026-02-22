@@ -18,6 +18,7 @@ Short, readable notes for study and repeat practice.
 - `gitops-workflow-lab.md` - GitOps workflow (ArgoCD) lab notes
 - `devsecops-cicd-lab.md` - DevSecOps controls integrated into CI/CD
 - `sre-simulation-lab.md` - SRE SLI/SLO/error-budget simulation lab notes
+- `blue-green-deployment-lab.md` - Blue/green + canary deployment simulation lab notes
 - `enterprise-devops-incidents-lab.md` - 15 cross-layer enterprise incident simulations
 - `github-actions-cicd-lab.md` - GitHub Actions CI/CD lab notes
 
@@ -36,6 +37,7 @@ Short, readable notes for study and repeat practice.
 6. `gitops-workflow-lab.md`
 7. `devsecops-cicd-lab.md`
 8. `sre-simulation-lab.md`
-9. `enterprise-devops-incidents-lab.md`
-10. `github-actions-cicd-lab.md`
-11. `ticket-demo-index.md`
+9. `blue-green-deployment-lab.md`
+10. `enterprise-devops-incidents-lab.md`
+11. `github-actions-cicd-lab.md`
+12. `ticket-demo-index.md`

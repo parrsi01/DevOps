@@ -216,6 +216,28 @@ Primary files:
 
 - `enterprise-devops-incidents-lab.md`
 
+### 11. Blue/Green Deployment Simulation Lab
+
+Status: `Runnable (depends on Docker daemon networking) + Simulations`
+
+Coverage:
+
+- two app versions (`blue-v1`, `green-v2`)
+- Docker Compose + Nginx traffic router
+- blue/green switching (100% blue / 100% green)
+- canary percentage routing (weighted upstream)
+- health-based switching gate
+- rollback runbook and scripts
+- simulations (bad deployment, partial rollback, data compatibility rollback issue)
+- tradeoff explanation (blue/green vs canary vs rolling update)
+
+Primary files:
+
+- `../projects/blue-green-deployment-lab/README.md`
+- `../projects/blue-green-deployment-lab/compose.yaml`
+- `../projects/blue-green-deployment-lab/scripts/`
+- `blue-green-deployment-lab.md`
+
 ## Documentation Quality Comparison (vs `datascience` repo)
 
 Current status: `Comparable structure, lighter depth`

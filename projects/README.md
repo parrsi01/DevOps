@@ -34,6 +34,11 @@ Runnable labs and templates.
   - Latency monitoring + alert rules
   - SRE incident simulations (degradation, latency, 5xx, partial outage, downtime)
   - Incident response + postmortem templates
+- `blue-green-deployment-lab/`
+  - Docker + Nginx deployment routing lab
+  - Blue/green switching + canary percentage rollout
+  - Health-based cutover and rollback workflow
+  - Bad deploy / partial rollback / data compatibility simulations
 
 ## CI/CD Templates
 
@@ -52,4 +57,5 @@ Runnable labs and templates.
 4. Run the Kubernetes local lab and practice cluster debugging.
 5. Run the GitOps workflow lab and practice rollback/drift handling.
 6. Run the SRE simulation lab on top of the monitoring stack.
-7. Review CI/CD + DevSecOps workflows and simulate failures in `../tickets/cicd/`.
+7. Run the blue/green deployment lab and practice cutover/rollback decisions.
+8. Review CI/CD + DevSecOps workflows and simulate failures in `../tickets/cicd/`.

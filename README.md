@@ -24,6 +24,7 @@ Date: 2026-02-22
 - `docs/gitops-workflow-lab.md` - GitOps workflow lab (ArgoCD, rollback, drift)
 - `docs/devsecops-cicd-lab.md` - DevSecOps CI/CD integration (Trivy, SAST, secrets, hardening)
 - `docs/sre-simulation-lab.md` - SRE lab (SLIs, SLOs, error budgets, incidents, postmortems)
+- `docs/blue-green-deployment-lab.md` - blue/green + canary deployment simulation (Docker + Nginx)
 - `projects/README.md` - live labs you run locally
 - `tickets/README.md` - repeatable incident drills
 - `scripts/` - setup / git / VS Code helper scripts
@@ -56,6 +57,8 @@ It is structured for repeat practice: each module includes runnable examples, in
   - Trivy, dependency/secrets scans, CodeQL SAST, Docker hardening, security headers, CVSS/risk/patch strategy
 - SRE Simulation Lab
   - SLIs/SLOs/error budgets, latency monitoring, scaling policy, incident response, postmortem practice
+- Blue/Green Deployment Simulation Lab
+  - Docker + Nginx traffic switching, canary percentage routing, health-based cutover, rollback, deployment failure simulations
 - Enterprise Incident Simulation Lab
   - 15 realistic cross-layer DevOps incidents with logs, metrics, root cause, resolution, and preventive actions
 - Ticket Demo Library
@@ -67,6 +70,7 @@ It is structured for repeat practice: each module includes runnable examples, in
   - module notes, offline indexes, operating manual, repo status
 - `projects/`
   - `docker-production-lab/` live container lab + failure scripts
+  - `blue-green-deployment-lab/` blue/green + canary rollout simulation
   - `monitoring-stack-lab/` monitoring + observability lab
   - `github-actions-ci-demo/` CI/CD workflow templates
 - `tickets/`
@@ -149,6 +153,15 @@ SRE simulation lab:
 ```bash
 cd projects/monitoring-stack-lab && ./scripts/start.sh
 cd ../sre-simulation-lab && ./scripts/preflight.sh
+```
+
+Blue/green deployment lab:
+
+```bash
+cd projects/blue-green-deployment-lab
+./scripts/start.sh
+./scripts/set_canary.sh 10
+./scripts/sample_traffic.sh 50
 ```
 
 ## Documentation Standards (Repository Quality)

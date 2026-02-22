@@ -1,0 +1,43 @@
+# Author: Simon Parris
+# Date: 2026-02-22
+services:
+  app_blue:
+    build:
+      context: ./app-blue
+    image: blue-green-lab/app-blue:blue-v1
+    container_name: bg-app-blue
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+    volumes:
+      - ./data:/data
+    ports:
+      - "18081:8080"
+    restart: unless-stopped
+
+  app_green:
+    build:
+      context: ./app-green
+    image: blue-green-lab/app-green:green-v2
+    container_name: bg-app-green
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+      AUTO_MIGRATE_TO_V2: "${AUTO_MIGRATE_TO_V2:-0}"
+    volumes:
+      - ./data:/data
+    ports:
+      - "18082:8080"
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: bg-proxy
+    depends_on:
+      - app_blue
+      - app_green
+    ports:
+      - "8088:80"
+    volumes:
+      - ./nginx/generated/default.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: unless-stopped

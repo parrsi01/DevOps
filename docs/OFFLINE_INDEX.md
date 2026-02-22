@@ -20,6 +20,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 - `gitops-workflow-lab.md`
 - `devsecops-cicd-lab.md`
 - `sre-simulation-lab.md`
+- `blue-green-deployment-lab.md`
 - `enterprise-devops-incidents-lab.md`
 
 ## Practice & Operations Notes
@@ -35,6 +36,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 - `../projects/kubernetes-local-lab/README.md`
 - `../projects/gitops-workflow-lab/README.md`
 - `../projects/sre-simulation-lab/README.md`
+- `../projects/blue-green-deployment-lab/README.md`
 - `../projects/github-actions-ci-demo/README.md`
 
 ## Ticket Demos (Cross-reference)
