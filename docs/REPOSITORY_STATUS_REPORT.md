@@ -134,7 +134,28 @@ Primary files:
 - `../projects/kubernetes-local-lab/manifests/`
 - `../projects/kubernetes-local-lab/scripts/`
 
-### 7. Enterprise Incident Simulation Lab
+### 7. GitOps Workflow Lab
+
+Status: `Runnable (after kubectl/minikube/argocd install) + Simulations`
+
+Coverage:
+
+- ArgoCD-based GitOps workflow
+- declarative Kustomize base/overlays model
+- Git as source of truth
+- rollback strategy (`git revert`)
+- version pinning + immutable image guidance
+- simulations (bad deploy rollback, drift, manual production change, environment version mismatch)
+- troubleshooting guide and deployment diagram
+
+Primary files:
+
+- `../projects/gitops-workflow-lab/README.md`
+- `../projects/gitops-workflow-lab/apps/`
+- `../projects/gitops-workflow-lab/argocd/`
+- `../projects/gitops-workflow-lab/scripts/`
+
+### 8. Enterprise Incident Simulation Lab
 
 Status: `Documented`
 

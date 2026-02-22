@@ -15,6 +15,7 @@ Short, readable notes for study and repeat practice.
 - `monitoring-stack-lab.md` - Prometheus/Grafana/Loki monitoring lab notes
 - `terraform-local-infra-lab.md` - Terraform local infrastructure lab notes
 - `kubernetes-local-lab.md` - Kubernetes local platform lab notes
+- `gitops-workflow-lab.md` - GitOps workflow (ArgoCD) lab notes
 - `enterprise-devops-incidents-lab.md` - 15 cross-layer enterprise incident simulations
 - `github-actions-cicd-lab.md` - GitHub Actions CI/CD lab notes
 
@@ -30,6 +31,7 @@ Short, readable notes for study and repeat practice.
 3. `monitoring-stack-lab.md`
 4. `terraform-local-infra-lab.md`
 5. `kubernetes-local-lab.md`
-6. `enterprise-devops-incidents-lab.md`
-7. `github-actions-cicd-lab.md`
-8. `ticket-demo-index.md`
+6. `gitops-workflow-lab.md`
+7. `enterprise-devops-incidents-lab.md`
+8. `github-actions-cicd-lab.md`
+9. `ticket-demo-index.md`

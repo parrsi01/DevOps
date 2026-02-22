@@ -24,6 +24,11 @@ Runnable labs and templates.
   - Namespaces, deployments, services, ingress, config/secrets
   - HPA autoscaling, rolling updates
   - Kubernetes failure simulations + troubleshooting
+- `gitops-workflow-lab/`
+  - ArgoCD-based GitOps workflow (plus tool-agnostic model)
+  - Kustomize base/overlays for dev/staging/prod
+  - Rollback, drift, manual-change, version-mismatch simulations
+  - GitOps troubleshooting guide
 
 ## CI/CD Templates
 
@@ -38,4 +43,5 @@ Runnable labs and templates.
 2. Practice tickets in `../tickets/docker/`.
 3. Run the Terraform lab and practice state/drift debugging.
 4. Run the Kubernetes local lab and practice cluster debugging.
-5. Review CI/CD workflows and simulate failures in `../tickets/cicd/`.
+5. Run the GitOps workflow lab and practice rollback/drift handling.
+6. Review CI/CD workflows and simulate failures in `../tickets/cicd/`.

@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: platform-lab-root
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/parrsi01/DevOps.git
+    targetRevision: main
+    path: projects/gitops-workflow-lab/argocd/applications
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

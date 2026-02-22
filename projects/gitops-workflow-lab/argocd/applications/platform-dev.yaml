@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: podinfo-dev
+  namespace: argocd
+spec:
+  project: platform-lab
+  source:
+    repoURL: https://github.com/parrsi01/DevOps.git
+    targetRevision: main
+    path: projects/gitops-workflow-lab/apps/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: platform-dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

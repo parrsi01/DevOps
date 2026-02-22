@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: podinfo-config
+data:
+  UI_MESSAGE: "GitOps Base"
+  UI_COLOR: "#2f855a"

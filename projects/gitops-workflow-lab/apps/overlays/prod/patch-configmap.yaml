@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: podinfo-config
+  namespace: platform-prod
+data:
+  UI_MESSAGE: "GitOps PROD"
+  UI_COLOR: "#c53030"

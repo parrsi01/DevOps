@@ -21,6 +21,7 @@ Date: 2026-02-22
 - `docs/enterprise-devops-incidents-lab.md` - 15 enterprise incident drills
 - `docs/terraform-local-infra-lab.md` - Terraform state/drift/idempotency lab
 - `docs/kubernetes-local-lab.md` - Kubernetes local platform lab + troubleshooting
+- `docs/gitops-workflow-lab.md` - GitOps workflow lab (ArgoCD, rollback, drift)
 - `projects/README.md` - live labs you run locally
 - `tickets/README.md` - repeatable incident drills
 - `scripts/` - setup / git / VS Code helper scripts
@@ -47,6 +48,8 @@ It is structured for repeat practice: each module includes runnable examples, in
   - Variables, outputs, state, remote state, idempotency, plan/apply/destroy, drift/debugging simulations
 - Kubernetes Local Platform Lab
   - Minikube/K3s setup, namespaces, services, ingress, HPA, rolling updates, k8s failure simulations
+- GitOps Workflow Lab
+  - ArgoCD + declarative Kustomize overlays, Git source of truth, rollback/drift/version mismatch simulations
 - Enterprise Incident Simulation Lab
   - 15 realistic cross-layer DevOps incidents with logs, metrics, root cause, resolution, and preventive actions
 - Ticket Demo Library
@@ -117,6 +120,14 @@ Kubernetes lab:
 cd projects/kubernetes-local-lab
 ./scripts/start_minikube.sh
 ./scripts/apply_base.sh
+```
+
+GitOps lab:
+
+```bash
+cd projects/gitops-workflow-lab
+./scripts/install_argocd_minikube.sh
+./scripts/bootstrap_argocd_apps.sh
 ```
 
 ## Documentation Standards (Repository Quality)
