@@ -20,6 +20,7 @@ Short, readable notes for study and repeat practice.
 - `sre-simulation-lab.md` - SRE SLI/SLO/error-budget simulation lab notes
 - `blue-green-deployment-lab.md` - Blue/green + canary deployment simulation lab notes
 - `aviation-scale-devops-incidents-lab.md` - 20 aviation-scale enterprise incident simulations (cross-layer)
+- `aviation-platform-architecture.md` - aviation-level platform design (multi-region, secure, scalable, DR)
 - `enterprise-devops-incidents-lab.md` - 15 cross-layer enterprise incident simulations
 - `github-actions-cicd-lab.md` - GitHub Actions CI/CD lab notes
 
@@ -40,6 +41,7 @@ Short, readable notes for study and repeat practice.
 8. `sre-simulation-lab.md`
 9. `blue-green-deployment-lab.md`
 10. `aviation-scale-devops-incidents-lab.md`
-11. `enterprise-devops-incidents-lab.md`
-12. `github-actions-cicd-lab.md`
-13. `ticket-demo-index.md`
+11. `aviation-platform-architecture.md`
+12. `enterprise-devops-incidents-lab.md`
+13. `github-actions-cicd-lab.md`
+14. `ticket-demo-index.md`

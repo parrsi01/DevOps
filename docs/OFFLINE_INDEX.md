@@ -22,6 +22,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 - `sre-simulation-lab.md`
 - `blue-green-deployment-lab.md`
 - `aviation-scale-devops-incidents-lab.md`
+- `aviation-platform-architecture.md`
 - `enterprise-devops-incidents-lab.md`
 
 ## Practice & Operations Notes

@@ -253,6 +253,22 @@ Primary files:
 
 - `aviation-scale-devops-incidents-lab.md`
 
+### 13. Aviation Platform Architecture Design
+
+Status: `Documented`
+
+Coverage:
+
+- scalable secure aviation-level infrastructure design
+- API backend, database cluster, Redis cache, monitoring stack, CI/CD pipeline
+- disaster recovery and multi-region redundancy strategy
+- diagram explanation and component interactions
+- failure domains, security controls, scalability strategy, and cost tradeoffs
+
+Primary files:
+
+- `aviation-platform-architecture.md`
+
 ## Documentation Quality Comparison (vs `datascience` repo)
 
 Current status: `Comparable structure, lighter depth`
