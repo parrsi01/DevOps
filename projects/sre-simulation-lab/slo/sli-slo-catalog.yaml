@@ -1,0 +1,70 @@
+# Author: Simon Parris
+# Date: 2026-02-22
+apiVersion: sre.devops.lab/v1alpha1
+kind: ServiceObjectives
+metadata:
+  name: monitoring-lab-api
+  owner: parrsi01
+spec:
+  service: monitoring-lab-app
+  environment: lab
+  measurement_window_defaults:
+    short: 5m
+    medium: 1h
+    long: 30d
+  slis:
+    - name: availability
+      description: Fraction of non-5xx requests for user-facing routes.
+      source: prometheus
+      query: |
+        1 - (
+          sum(rate(app_http_requests_total{status=~"5..",route!="/metrics"}[5m]))
+          /
+          clamp_min(sum(rate(app_http_requests_total{route!="/metrics"}[5m])), 0.001)
+        )
+      unit: ratio
+    - name: latency_p95_ms
+      description: P95 HTTP latency across non-metrics routes.
+      source: prometheus
+      query: |
+        histogram_quantile(0.95, sum by (le) (rate(app_http_request_duration_seconds_bucket{route!="/metrics"}[5m]))) * 1000
+      unit: ms
+    - name: error_rate_percent
+      description: Percentage of HTTP 5xx responses.
+      source: prometheus
+      query: |
+        100 * sum(rate(app_http_requests_total{status=~"5..",route!="/metrics"}[5m]))
+        / clamp_min(sum(rate(app_http_requests_total{route!="/metrics"}[5m])), 0.001)
+      unit: percent
+    - name: db_latency_p95_ms
+      description: P95 simulated DB latency.
+      source: prometheus
+      query: |
+        histogram_quantile(0.95, sum by (le) (rate(app_db_query_latency_seconds_bucket[5m]))) * 1000
+      unit: ms
+  slos:
+    - name: availability-30d
+      sli: availability
+      objective: ">=99.9%"
+      window: 30d
+      error_budget:
+        percent: 0.1
+        burn_alerts:
+          - name: fast-burn
+            threshold: "14.4x"
+            window: 5m
+          - name: slow-burn
+            threshold: "2x"
+            window: 1h
+    - name: latency-p95-7d
+      sli: latency_p95_ms
+      objective: "<300ms"
+      window: 7d
+    - name: error-rate-7d
+      sli: error_rate_percent
+      objective: "<1%"
+      window: 7d
+    - name: db-latency-p95-7d
+      sli: db_latency_p95_ms
+      objective: "<400ms"
+      window: 7d

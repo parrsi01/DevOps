@@ -19,6 +19,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 - `kubernetes-local-lab.md`
 - `gitops-workflow-lab.md`
 - `devsecops-cicd-lab.md`
+- `sre-simulation-lab.md`
 - `enterprise-devops-incidents-lab.md`
 
 ## Practice & Operations Notes
@@ -33,6 +34,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 - `../projects/terraform-local-infra-lab/README.md`
 - `../projects/kubernetes-local-lab/README.md`
 - `../projects/gitops-workflow-lab/README.md`
+- `../projects/sre-simulation-lab/README.md`
 - `../projects/github-actions-ci-demo/README.md`
 
 ## Ticket Demos (Cross-reference)

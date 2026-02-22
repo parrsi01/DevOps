@@ -178,7 +178,31 @@ Primary files:
 - `../projects/github-actions-ci-demo/examples/secure-nginx/`
 - `devsecops-cicd-lab.md`
 
-### 9. Enterprise Incident Simulation Lab
+### 9. SRE Simulation Lab
+
+Status: `Runnable (depends on monitoring-stack-lab) + Simulations`
+
+Coverage:
+
+- SLI / SLO / error budget definitions
+- latency monitoring queries and Prometheus alert rules
+- downtime and traffic spike simulations
+- scaling policy design (HPA example + guidelines)
+- incident response process runbook
+- blameless postmortem template
+- simulations (service degradation, DB latency spike, 5xx surge, partial outage)
+- MTTR / MTBF / alert fatigue explanations
+
+Primary files:
+
+- `../projects/sre-simulation-lab/README.md`
+- `../projects/sre-simulation-lab/slo/`
+- `../projects/sre-simulation-lab/scripts/`
+- `../projects/sre-simulation-lab/runbooks/`
+- `../projects/sre-simulation-lab/templates/`
+- `sre-simulation-lab.md`
+
+### 10. Enterprise Incident Simulation Lab
 
 Status: `Documented`
 

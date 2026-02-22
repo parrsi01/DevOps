@@ -23,6 +23,7 @@ Date: 2026-02-22
 - `docs/kubernetes-local-lab.md` - Kubernetes local platform lab + troubleshooting
 - `docs/gitops-workflow-lab.md` - GitOps workflow lab (ArgoCD, rollback, drift)
 - `docs/devsecops-cicd-lab.md` - DevSecOps CI/CD integration (Trivy, SAST, secrets, hardening)
+- `docs/sre-simulation-lab.md` - SRE lab (SLIs, SLOs, error budgets, incidents, postmortems)
 - `projects/README.md` - live labs you run locally
 - `tickets/README.md` - repeatable incident drills
 - `scripts/` - setup / git / VS Code helper scripts
@@ -53,6 +54,8 @@ It is structured for repeat practice: each module includes runnable examples, in
   - ArgoCD + declarative Kustomize overlays, Git source of truth, rollback/drift/version mismatch simulations
 - DevSecOps CI/CD Integration Lab
   - Trivy, dependency/secrets scans, CodeQL SAST, Docker hardening, security headers, CVSS/risk/patch strategy
+- SRE Simulation Lab
+  - SLIs/SLOs/error budgets, latency monitoring, scaling policy, incident response, postmortem practice
 - Enterprise Incident Simulation Lab
   - 15 realistic cross-layer DevOps incidents with logs, metrics, root cause, resolution, and preventive actions
 - Ticket Demo Library
@@ -139,6 +142,13 @@ DevSecOps CI/CD lab:
 cd projects/github-actions-ci-demo
 ls .github/workflows
 ls examples/secure-nginx
+```
+
+SRE simulation lab:
+
+```bash
+cd projects/monitoring-stack-lab && ./scripts/start.sh
+cd ../sre-simulation-lab && ./scripts/preflight.sh
 ```
 
 ## Documentation Standards (Repository Quality)

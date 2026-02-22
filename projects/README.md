@@ -29,6 +29,11 @@ Runnable labs and templates.
   - Kustomize base/overlays for dev/staging/prod
   - Rollback, drift, manual-change, version-mismatch simulations
   - GitOps troubleshooting guide
+- `sre-simulation-lab/`
+  - SLIs, SLOs, error budgets
+  - Latency monitoring + alert rules
+  - SRE incident simulations (degradation, latency, 5xx, partial outage, downtime)
+  - Incident response + postmortem templates
 
 ## CI/CD Templates
 
@@ -46,4 +51,5 @@ Runnable labs and templates.
 3. Run the Terraform lab and practice state/drift debugging.
 4. Run the Kubernetes local lab and practice cluster debugging.
 5. Run the GitOps workflow lab and practice rollback/drift handling.
-6. Review CI/CD + DevSecOps workflows and simulate failures in `../tickets/cicd/`.
+6. Run the SRE simulation lab on top of the monitoring stack.
+7. Review CI/CD + DevSecOps workflows and simulate failures in `../tickets/cicd/`.

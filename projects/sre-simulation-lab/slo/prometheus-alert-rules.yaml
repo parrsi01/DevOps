@@ -1,0 +1,52 @@
+# Author: Simon Parris
+# Date: 2026-02-22
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: sre-simulation-lab-alerts
+  namespace: monitoring
+spec:
+  groups:
+    - name: sre-sli-recording.rules
+      rules:
+        - record: sre:request_rate:1m
+          expr: sum(rate(app_http_requests_total{route!="/metrics"}[1m]))
+        - record: sre:error_rate_percent:5m
+          expr: |
+            100 * sum(rate(app_http_requests_total{status=~"5..",route!="/metrics"}[5m]))
+            / clamp_min(sum(rate(app_http_requests_total{route!="/metrics"}[5m])), 0.001)
+        - record: sre:http_latency_p95_ms:5m
+          expr: |
+            histogram_quantile(0.95, sum by (le) (rate(app_http_request_duration_seconds_bucket{route!="/metrics"}[5m]))) * 1000
+        - record: sre:db_latency_p95_ms:5m
+          expr: |
+            histogram_quantile(0.95, sum by (le) (rate(app_db_query_latency_seconds_bucket[5m]))) * 1000
+    - name: sre-sli-alerts
+      rules:
+        - alert: HighHttpErrorRate
+          expr: sre:error_rate_percent:5m > 5
+          for: 5m
+          labels:
+            severity: warning
+            team: platform
+          annotations:
+            summary: "High HTTP error rate"
+            description: "HTTP 5xx percentage exceeded 5% for 5m."
+        - alert: HighHttpLatencyP95
+          expr: sre:http_latency_p95_ms:5m > 500
+          for: 10m
+          labels:
+            severity: warning
+            team: platform
+          annotations:
+            summary: "High p95 latency"
+            description: "P95 HTTP latency exceeded 500ms for 10m."
+        - alert: SimulatedServiceDown
+          expr: absent(up{job="app"} == 1)
+          for: 2m
+          labels:
+            severity: critical
+            team: platform
+          annotations:
+            summary: "App scrape target down"
+            description: "Prometheus cannot scrape the app metrics endpoint."
