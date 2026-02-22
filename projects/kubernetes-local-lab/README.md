@@ -1,5 +1,17 @@
 # Kubernetes Local Platform Lab (Minikube or K3s)
 
+## Enterprise Program Standard
+
+This module is part of a professional infrastructure training program (not a hobby lab).
+
+Training expectations for this module:
+- production-grade design and operational assumptions (multi-AZ/region, identity, logging, recovery)
+- security controls and least-privilege decisions are part of the exercise, not optional add-ons
+- audit awareness: change traceability, approvals, evidence, and rollback records should be captured
+- failure domain analysis must be included (process, host/node, AZ/region, dependency, control plane)
+- examples are learning-safe but mapped to enterprise patterns; avoid localhost-only reasoning during analysis
+- exercises are repeatable without AI by following the documented commands, checklists, and runbooks
+
 Acting as a Senior Platform Engineer: this lab gives you a repeatable, production-style Kubernetes training environment on a local machine.
 
 Primary path: `Minikube` (recommended for first run)

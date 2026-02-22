@@ -27,6 +27,7 @@ Date: 2026-02-22
 - `docs/blue-green-deployment-lab.md` - blue/green + canary deployment simulation (Docker + Nginx)
 - `docs/aviation-scale-devops-incidents-lab.md` - 20 aviation-scale enterprise DevOps incident simulations
 - `docs/aviation-platform-architecture.md` - scalable secure aviation-level infrastructure design (multi-region, DR, security, cost)
+- `docs/enterprise-networking-lab.md` - enterprise networking module (TCP/UDP, TLS, DNS, NAT, LBs, incidents, cheatsheet)
 - `projects/README.md` - live labs you run locally
 - `tickets/README.md` - repeatable incident drills
 - `scripts/` - setup / git / VS Code helper scripts
@@ -65,6 +66,8 @@ It is structured for repeat practice: each module includes runnable examples, in
   - 20 cross-layer incidents across app, container, orchestration, network, and infrastructure for aviation-scale systems
 - Aviation Platform Architecture Design
   - Scalable secure multi-region design for API, DB, Redis, monitoring, CI/CD, DR, and failure-domain planning
+- Enterprise Networking Module
+  - Aviation-grade networking design, TLS/DNS/NAT/LB concepts, packet captures, multi-layer debugging, and 10 incidents
 - Enterprise Incident Simulation Lab
   - 15 realistic cross-layer DevOps incidents with logs, metrics, root cause, resolution, and preventive actions
 - Ticket Demo Library
@@ -77,6 +80,7 @@ It is structured for repeat practice: each module includes runnable examples, in
 - `projects/`
   - `docker-production-lab/` live container lab + failure scripts
   - `blue-green-deployment-lab/` blue/green + canary rollout simulation
+  - `enterprise-networking-lab/` packet capture + DNS/TLS/network troubleshooting exercises
   - `monitoring-stack-lab/` monitoring + observability lab
   - `github-actions-ci-demo/` CI/CD workflow templates
 - `tickets/`
@@ -168,6 +172,15 @@ cd projects/blue-green-deployment-lab
 ./scripts/start.sh
 ./scripts/set_canary.sh 10
 ./scripts/sample_traffic.sh 50
+```
+
+Enterprise networking lab:
+
+```bash
+cd projects/enterprise-networking-lab
+./scripts/preflight.sh
+./scripts/capture_dns_path.sh api.company.aero eth0
+./scripts/capture_tls_handshake.sh api.company.aero 443 eth0
 ```
 
 ## Documentation Standards (Repository Quality)

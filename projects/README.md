@@ -39,6 +39,10 @@ Runnable labs and templates.
   - Blue/green switching + canary percentage rollout
   - Health-based cutover and rollback workflow
   - Bad deploy / partial rollback / data compatibility simulations
+- `enterprise-networking-lab/`
+  - Enterprise networking capture/debug exercises
+  - DNS/TLS/HTTP timeout packet capture wrappers
+  - Incident evidence template and audit-oriented practice workflow
 
 ## CI/CD Templates
 
@@ -58,4 +62,5 @@ Runnable labs and templates.
 5. Run the GitOps workflow lab and practice rollback/drift handling.
 6. Run the SRE simulation lab on top of the monitoring stack.
 7. Run the blue/green deployment lab and practice cutover/rollback decisions.
-8. Review CI/CD + DevSecOps workflows and simulate failures in `../tickets/cicd/`.
+8. Run the enterprise networking lab and practice packet-capture-based debugging.
+9. Review CI/CD + DevSecOps workflows and simulate failures in `../tickets/cicd/`.

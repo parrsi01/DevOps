@@ -269,6 +269,27 @@ Primary files:
 
 - `aviation-platform-architecture.md`
 
+### 14. Enterprise Networking Module
+
+Status: `Documented + Live Capture/Debug Exercise Project`
+
+Coverage:
+
+- deep TCP vs UDP behavior
+- TLS handshake breakdown (chain, key exchange, cipher negotiation)
+- L4 vs L7 load balancers, NAT/SNAT/DNAT, reverse proxy vs load balancer
+- DNS resolution path, MTU/fragmentation/packet loss, stateful vs stateless services
+- firewall design patterns and network segmentation (subnets/DMZ)
+- production architecture diagrams, packet capture examples, log interpretation, multi-layer debugging walkthrough
+- 10 aviation-scale networking incidents with symptoms/logs/root cause/mitigation/preventative controls
+- enterprise networking cheatsheet and interview-level explanations
+
+Primary files:
+
+- `enterprise-networking-lab.md`
+- `../projects/enterprise-networking-lab/README.md`
+- `../projects/enterprise-networking-lab/scripts/`
+
 ## Documentation Quality Comparison (vs `datascience` repo)
 
 Current status: `Comparable structure, lighter depth`

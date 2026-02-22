@@ -1,5 +1,17 @@
 # Enterprise DevOps Incident Simulation Lab (15 Scenarios)
 
+## Enterprise Program Standard
+
+This module is part of a professional infrastructure training program (not a hobby lab).
+
+Training expectations for this module:
+- production-grade design and operational assumptions (multi-AZ/region, identity, logging, recovery)
+- security controls and least-privilege decisions are part of the exercise, not optional add-ons
+- audit awareness: change traceability, approvals, evidence, and rollback records should be captured
+- failure domain analysis must be included (process, host/node, AZ/region, dependency, control plane)
+- examples are learning-safe but mapped to enterprise patterns; avoid localhost-only reasoning during analysis
+- exercises are repeatable without AI by following the documented commands, checklists, and runbooks
+
 Realistic enterprise-style incidents that require reasoning across application, container/orchestrator, OS, network, CI/CD, and platform layers.
 
 Use these as ticket-style drills.

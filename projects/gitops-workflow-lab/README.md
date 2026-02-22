@@ -1,5 +1,17 @@
 # GitOps Workflow Lab (ArgoCD + Declarative Kubernetes)
 
+## Enterprise Program Standard
+
+This module is part of a professional infrastructure training program (not a hobby lab).
+
+Training expectations for this module:
+- production-grade design and operational assumptions (multi-AZ/region, identity, logging, recovery)
+- security controls and least-privilege decisions are part of the exercise, not optional add-ons
+- audit awareness: change traceability, approvals, evidence, and rollback records should be captured
+- failure domain analysis must be included (process, host/node, AZ/region, dependency, control plane)
+- examples are learning-safe but mapped to enterprise patterns; avoid localhost-only reasoning during analysis
+- exercises are repeatable without AI by following the documented commands, checklists, and runbooks
+
 Senior Platform Engineer lab for building a production-style GitOps workflow locally.
 
 This lab uses `ArgoCD` as the GitOps controller and also explains a structured GitOps workflow in a tool-agnostic way.

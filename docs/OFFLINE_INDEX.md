@@ -23,6 +23,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 - `blue-green-deployment-lab.md`
 - `aviation-scale-devops-incidents-lab.md`
 - `aviation-platform-architecture.md`
+- `enterprise-networking-lab.md`
 - `enterprise-devops-incidents-lab.md`
 
 ## Practice & Operations Notes
@@ -39,6 +40,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 - `../projects/gitops-workflow-lab/README.md`
 - `../projects/sre-simulation-lab/README.md`
 - `../projects/blue-green-deployment-lab/README.md`
+- `../projects/enterprise-networking-lab/README.md`
 - `../projects/github-actions-ci-demo/README.md`
 
 ## Ticket Demos (Cross-reference)
