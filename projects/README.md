@@ -9,6 +9,11 @@ Runnable labs and templates.
   - Non-root container
   - Health checks, restart policies, logging
   - Failure simulation scripts
+- `monitoring-stack-lab/`
+  - Prometheus + Grafana + Loki
+  - App, container, and system metrics
+  - Prebuilt dashboards (CPU, memory, request rate, error rate)
+  - Repeatable spike/anomaly simulations
 
 ## CI/CD Templates
 

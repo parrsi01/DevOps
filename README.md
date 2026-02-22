@@ -25,6 +25,7 @@ Repeatable hands-on DevOps labs for Linux, Docker, and GitHub Actions CI/CD.
   - Git/GitHub setup notes
 - `projects/`
   - `docker-production-lab/` live container lab + failure scripts
+  - `monitoring-stack-lab/` monitoring + observability lab
   - `github-actions-ci-demo/` CI/CD workflow templates
 - `tickets/`
   - Docker incident simulations

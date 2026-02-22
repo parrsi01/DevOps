@@ -20,6 +20,7 @@ coverage/
 projects/docker-production-lab/data/
 projects/docker-production-lab/hostdata-*/
 projects/docker-production-lab/logs/
+projects/monitoring-stack-lab/runtime-logs/
 
 # General lab artifacts
 *.log
