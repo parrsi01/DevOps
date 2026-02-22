@@ -15,6 +15,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 - `docker-production-lab.md`
 - `github-actions-cicd-lab.md`
 - `monitoring-stack-lab.md`
+- `terraform-local-infra-lab.md`
 - `enterprise-devops-incidents-lab.md`
 
 ## Practice & Operations Notes
@@ -26,6 +27,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 
 - `../projects/docker-production-lab/README.md`
 - `../projects/monitoring-stack-lab/README.md`
+- `../projects/terraform-local-infra-lab/README.md`
 - `../projects/github-actions-ci-demo/README.md`
 
 ## Ticket Demos (Cross-reference)

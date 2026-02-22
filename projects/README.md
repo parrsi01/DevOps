@@ -14,6 +14,11 @@ Runnable labs and templates.
   - App, container, and system metrics
   - Prebuilt dashboards (CPU, memory, request rate, error rate)
   - Repeatable spike/anomaly simulations
+- `terraform-local-infra-lab/`
+  - Terraform local backend lab (safe, no cloud cost)
+  - Variables, outputs, state, remote state demo
+  - Plan/apply/destroy and idempotency practice
+  - Drift/manual-change/backend-failure simulations
 
 ## CI/CD Templates
 
@@ -26,4 +31,5 @@ Runnable labs and templates.
 
 1. Run the Docker lab locally.
 2. Practice tickets in `../tickets/docker/`.
-3. Review CI/CD workflows and simulate failures in `../tickets/cicd/`.
+3. Run the Terraform lab and practice state/drift debugging.
+4. Review CI/CD workflows and simulate failures in `../tickets/cicd/`.

@@ -86,6 +86,42 @@ Primary files:
 - `../projects/monitoring-stack-lab/compose.yaml`
 - `../projects/monitoring-stack-lab/grafana/dashboards/`
 
+### 5. Terraform Local Infrastructure Lab
+
+Status: `Runnable (after Terraform install) + Simulations`
+
+Coverage:
+
+- variables and input validation
+- outputs
+- local state backend explanation
+- remote state explanation + demo
+- idempotency
+- plan vs apply
+- destroy
+- simulations (state drift, manual change, variable mismatch, backend failure)
+- debugging workflow
+
+Primary files:
+
+- `../projects/terraform-local-infra-lab/README.md`
+- `../projects/terraform-local-infra-lab/*.tf`
+- `../projects/terraform-local-infra-lab/scripts/`
+
+### 6. Enterprise Incident Simulation Lab
+
+Status: `Documented`
+
+Coverage:
+
+- 15 realistic enterprise DevOps incidents
+- cross-layer reasoning (app/platform/network/CI/CD/IaC)
+- logs + metrics + root cause + resolution + preventive action
+
+Primary files:
+
+- `enterprise-devops-incidents-lab.md`
+
 ## Documentation Quality Comparison (vs `datascience` repo)
 
 Current status: `Comparable structure, lighter depth`

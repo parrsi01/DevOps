@@ -1,0 +1,11 @@
+project_name   = "terraform-lab-app"
+environment    = "dev"
+app_port       = 8080
+instance_count = 2
+owners         = ["parrsi01", "ops-lab"]
+db_password    = "ChangeMe12345!"
+
+feature_flags = {
+  metrics_enabled = true
+  debug_mode      = false
+}

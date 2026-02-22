@@ -19,6 +19,7 @@ Date: 2026-02-22
 - `docs/PROJECT_MANUAL.md` - repository operating manual
 - `docs/REPOSITORY_STATUS_REPORT.md` - current repo capability/status summary
 - `docs/enterprise-devops-incidents-lab.md` - 15 enterprise incident drills
+- `docs/terraform-local-infra-lab.md` - Terraform state/drift/idempotency lab
 - `projects/README.md` - live labs you run locally
 - `tickets/README.md` - repeatable incident drills
 - `scripts/` - setup / git / VS Code helper scripts
@@ -41,6 +42,8 @@ It is structured for repeat practice: each module includes runnable examples, in
   - lint/test/build, semantic version tagging, docker publish, branch protection, secret management, pipeline failure simulations
 - Monitoring Stack Lab
   - Prometheus, Grafana, Loki, app/container/system metrics, dashboards, metric interpretation, SLI/SLO basics
+- Terraform Local Infrastructure Lab
+  - Variables, outputs, state, remote state, idempotency, plan/apply/destroy, drift/debugging simulations
 - Enterprise Incident Simulation Lab
   - 15 realistic cross-layer DevOps incidents with logs, metrics, root cause, resolution, and preventive actions
 - Ticket Demo Library
@@ -95,6 +98,15 @@ cd projects/monitoring-stack-lab
 ```
 
 Grafana: `http://127.0.0.1:3000` (`admin` / `admin`)
+
+Terraform lab:
+
+```bash
+cd projects/terraform-local-infra-lab
+cp terraform.tfvars.example terraform.tfvars
+./scripts/init.sh
+./scripts/plan.sh
+```
 
 ## Documentation Standards (Repository Quality)
 
