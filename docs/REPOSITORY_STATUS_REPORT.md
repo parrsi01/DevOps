@@ -269,7 +269,25 @@ Primary files:
 
 - `aviation-platform-architecture.md`
 
-### 14. Enterprise Networking Module
+### 14. Ticket Demo Library
+
+Status: `Runnable Incident Drills (Docker + CI/CD)`
+
+Coverage:
+
+- repeatable ticket-style debugging workflows
+- Docker incident drills (crash loops, permissions, entrypoint, OOM, port conflicts)
+- CI/CD incident drills (lint, matrix, Docker build, release permissions, GHCR permissions)
+- evidence collection and fix validation practice
+
+Primary files:
+
+- `../tickets/README.md`
+- `../tickets/docker/`
+- `../tickets/cicd/`
+- `ticket-demo-index.md`
+
+### 15. Enterprise Networking Module
 
 Status: `Documented + Live Capture/Debug Exercise Project`
 
@@ -289,6 +307,23 @@ Primary files:
 - `enterprise-networking-lab.md`
 - `../projects/enterprise-networking-lab/README.md`
 - `../projects/enterprise-networking-lab/scripts/`
+
+### 15.1 Enterprise Infrastructure Audit & Refactoring Program
+
+Status: `Documented (Cross-Module Upgrade Plan for Modules 1-14)`
+
+Coverage:
+
+- enterprise infrastructure audit of modules 1-14
+- weaknesses and toy-pattern replacement guidance
+- mandatory cross-cutting controls (JSON logging, promotion, pinning, security, secrets, limits, audit, rollback, DR)
+- before/after standards comparison
+- enterprise-grade directory structure target
+- production readiness checklist for refactoring execution
+
+Primary files:
+
+- `enterprise-infrastructure-audit-refactor-program.md`
 
 ## Documentation Quality Comparison (vs `datascience` repo)
 

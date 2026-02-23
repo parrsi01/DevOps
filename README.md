@@ -17,6 +17,9 @@ Date: 2026-02-22
 - `docs/README.md` - notes + study runbooks index
 - `docs/OFFLINE_INDEX.md` - offline-first documentation index
 - `docs/PROJECT_MANUAL.md` - repository operating manual
+- `docs/PROJECT_RUNBOOKS_DETAILED.md` - detailed beginner/research-style runbook for every project in this repo
+- `docs/LESSON_EXECUTION_COMPANION.md` - slow-learning lesson guide (what/why/do/evidence/stop)
+- `docs/LESSON_RESEARCH_ANALYSIS_COMPANION.md` - beginner definitions + research-style analysis lens per lesson
 - `docs/REPOSITORY_STATUS_REPORT.md` - current repo capability/status summary
 - `docs/enterprise-devops-incidents-lab.md` - 15 enterprise incident drills
 - `docs/terraform-local-infra-lab.md` - Terraform state/drift/idempotency lab
@@ -28,6 +31,7 @@ Date: 2026-02-22
 - `docs/aviation-scale-devops-incidents-lab.md` - 20 aviation-scale enterprise DevOps incident simulations
 - `docs/aviation-platform-architecture.md` - scalable secure aviation-level infrastructure design (multi-region, DR, security, cost)
 - `docs/enterprise-networking-lab.md` - enterprise networking module (TCP/UDP, TLS, DNS, NAT, LBs, incidents, cheatsheet)
+- `docs/enterprise-infrastructure-audit-refactor-program.md` - Module 15.1 enterprise audit and refactoring program (modules 1-14)
 - `projects/README.md` - live labs you run locally
 - `tickets/README.md` - repeatable incident drills
 - `scripts/` - setup / git / VS Code helper scripts
@@ -68,6 +72,8 @@ It is structured for repeat practice: each module includes runnable examples, in
   - Scalable secure multi-region design for API, DB, Redis, monitoring, CI/CD, DR, and failure-domain planning
 - Enterprise Networking Module
   - Aviation-grade networking design, TLS/DNS/NAT/LB concepts, packet captures, multi-layer debugging, and 10 incidents
+- Enterprise Infrastructure Audit & Refactoring Program (Module 15.1)
+  - production-grade upgrade plan for modules 1-14 (logging, security, promotion, rollback, DR, documentation standards)
 - Enterprise Incident Simulation Lab
   - 15 realistic cross-layer DevOps incidents with logs, metrics, root cause, resolution, and preventive actions
 - Ticket Demo Library

@@ -27,6 +27,8 @@ Goals:
 
 ## Repository Modules
 
+Note: this section is a legacy starter set. The canonical current module numbering (including Module 15 and Module 15.1) is maintained in `REPOSITORY_STATUS_REPORT.md`.
+
 1. Linux mastery (notes + command drills)
 2. Docker production lab (live container project + failures)
 3. GitHub Actions CI/CD templates and failure simulations

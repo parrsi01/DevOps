@@ -7,7 +7,10 @@ Offline-first documentation index for the `DevOps` learning repository.
 1. `../README.md` - repository overview and quick start
 2. `README.md` - docs folder index
 3. `PROJECT_MANUAL.md` - operating manual for labs and workflows
-4. `REPOSITORY_STATUS_REPORT.md` - current module coverage/status
+4. `PROJECT_RUNBOOKS_DETAILED.md` - detailed project-by-project runbook (beginner + research format)
+5. `LESSON_EXECUTION_COMPANION.md` - slow-learning lesson guide (commands + reasons + evidence)
+6. `LESSON_RESEARCH_ANALYSIS_COMPANION.md` - beginner definitions + research-style analysis guide
+7. `REPOSITORY_STATUS_REPORT.md` - current module coverage/status
 
 ## Module Notes
 
@@ -24,6 +27,7 @@ Offline-first documentation index for the `DevOps` learning repository.
 - `aviation-scale-devops-incidents-lab.md`
 - `aviation-platform-architecture.md`
 - `enterprise-networking-lab.md`
+- `enterprise-infrastructure-audit-refactor-program.md`
 - `enterprise-devops-incidents-lab.md`
 
 ## Practice & Operations Notes

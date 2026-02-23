@@ -1,4 +1,4 @@
-# Enterprise Networking Module (Aviation-Grade Infrastructure)
+# Enterprise Networking Module (Module 15, Aviation-Grade Infrastructure)
 
 Author: Simon Parris  
 Date: 2026-02-22

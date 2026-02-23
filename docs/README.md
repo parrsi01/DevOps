@@ -6,6 +6,9 @@ Short, readable notes for study and repeat practice.
 
 - `OFFLINE_INDEX.md` - offline-first navigation index for the repo
 - `PROJECT_MANUAL.md` - operating manual and practice workflow
+- `PROJECT_RUNBOOKS_DETAILED.md` - detailed beginner + research-style runbook for all repo projects
+- `LESSON_EXECUTION_COMPANION.md` - slow-learning lesson-by-lesson guide (what/why/do/evidence/stop)
+- `LESSON_RESEARCH_ANALYSIS_COMPANION.md` - beginner definitions + analyst-style reading prompts per lesson
 - `REPOSITORY_STATUS_REPORT.md` - module coverage and repository status summary
 
 ## Lab Notes
@@ -22,6 +25,7 @@ Short, readable notes for study and repeat practice.
 - `aviation-scale-devops-incidents-lab.md` - 20 aviation-scale enterprise incident simulations (cross-layer)
 - `aviation-platform-architecture.md` - aviation-level platform design (multi-region, secure, scalable, DR)
 - `enterprise-networking-lab.md` - aviation-grade enterprise networking module + incidents + cheatsheet
+- `enterprise-infrastructure-audit-refactor-program.md` - Module 15.1 enterprise audit/refactor program for modules 1-14
 - `enterprise-devops-incidents-lab.md` - 15 cross-layer enterprise incident simulations
 - `github-actions-cicd-lab.md` - GitHub Actions CI/CD lab notes
 
@@ -44,6 +48,7 @@ Short, readable notes for study and repeat practice.
 10. `aviation-scale-devops-incidents-lab.md`
 11. `aviation-platform-architecture.md`
 12. `enterprise-networking-lab.md`
-13. `enterprise-devops-incidents-lab.md`
-14. `github-actions-cicd-lab.md`
-15. `ticket-demo-index.md`
+13. `enterprise-infrastructure-audit-refactor-program.md`
+14. `enterprise-devops-incidents-lab.md`
+15. `github-actions-cicd-lab.md`
+16. `ticket-demo-index.md`

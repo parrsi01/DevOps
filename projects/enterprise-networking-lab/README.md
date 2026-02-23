@@ -1,4 +1,4 @@
-# Enterprise Networking Lab (Live Exercises + Packet Capture Recipes)
+# Enterprise Networking Lab (Module 15 Live Exercises + Packet Capture Recipes)
 
 Author: Simon Parris  
 Date: 2026-02-22
