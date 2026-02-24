@@ -1,0 +1,67 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Bash syntax check (validator)
+        run: bash -n validate_repo.sh
+
+      - name: Bash syntax check (repo scripts)
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' f; do
+            bash -n "$f"
+          done < <(find scripts projects tickets -type f -name '*.sh' -print0)
+
+      - name: Python syntax check (if present)
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s globstar nullglob
+          py_files=(**/*.py)
+          filtered=()
+          for f in "${py_files[@]}"; do
+            case "$f" in
+              .git/*|.course-exercises/*|.course-state/*) continue ;;
+            esac
+            filtered+=("$f")
+          done
+          if ((${#filtered[@]})); then
+            python -m py_compile "${filtered[@]}"
+          else
+            echo "No Python files to compile"
+          fi
+
+      - name: Placeholder/template marker scan
+        shell: bash
+        run: |
+          set -euo pipefail
+          if command -v rg >/dev/null 2>&1; then
+            ! rg -n "TODO|TBD|FIXME|PLACEHOLDER|REPLACE_WITH_|lorem ipsum" . \
+              --glob '!**/.git/**' \
+              --glob '!.github/workflows/**' \
+              --glob '!.course-exercises/**' \
+              --glob '!.course-state/**' \
+              --glob '!validate_repo.sh'
+          else
+            echo "rg not available; skipping placeholder scan"
+          fi

@@ -56,3 +56,9 @@ These Library files consolidate definitions from:
 > **Author** — Simon Parris
 > **Format** — Scientific article structure, beginner language
 > **Last Updated** — 2026-02-23
+
+---
+
+## Single-File Master Guide
+
+- [Full Course Master Guide (single-file notes + diagrams)](./00_full_course_master_guide.md)
